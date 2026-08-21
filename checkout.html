@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Mulex Fashions</title>
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <!-- CHECKOUT -->
+    <main class="checkout-page">
+
+        <div class="page-title">
+
+            <h1>CHECKOUT</h1>
+
+            <p>
+                Complete your details to place your order.
+            </p>
+
+        </div>
+
+
+        <div class="checkout-layout">
+
+
+            <!-- CUSTOMER INFORMATION -->
+            <section class="checkout-form">
+
+                <div class="checkout-section">
+
+                    <h2>CONTACT INFORMATION</h2>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="fullName">FULL NAME</label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="phone">PHONE NUMBER</label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="07XXXXXXXX"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">EMAIL ADDRESS</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- DELIVERY -->
+                <div class="checkout-section">
+
+                    <h2>DELIVERY INFORMATION</h2>
+
+
+                    <div class="form-group">
+
+                        <label for="address">DELIVERY ADDRESS</label>
+
+                        <textarea
+                            id="address"
+                            placeholder="Enter your delivery address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">CITY / TOWN</label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="Enter city or town"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="area">AREA / DISTRICT</label>
+
+                            <input
+                                type="text"
+                                id="area"
+                                placeholder="Enter area or district"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="instructions">
+                            DELIVERY INSTRUCTIONS
+                        </label>
+
+                        <textarea
+                            id="instructions"
+                            placeholder="Optional delivery instructions"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DELIVERY METHOD -->
+                <div class="checkout-section">
+
+                    <h2>DELIVERY METHOD</h2>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="deliveryMethod"
+                            value="standard"
+                            checked
+                            onchange="updateDelivery()"
+                        >
+
+                        <div>
+                            <strong>STANDARD DELIVERY</strong>
+                            <span>Delivery within 1–3 business days</span>
+                        </div>
+
+                        <b>UGX 5,000</b>
+
+                    </label>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="deliveryMethod"
+                            value="express"
+                            onchange="updateDelivery()"
+                        >
+
+                        <div>
+                            <strong>EXPRESS DELIVERY</strong>
+                            <span>Faster delivery where available</span>
+                        </div>
+
+                        <b>UGX 10,000</b>
+
+                    </label>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="deliveryMethod"
+                            value="pickup"
+                            onchange="updateDelivery()"
+                        >
+
+                        <div>
+                            <strong>STORE PICKUP</strong>
+                            <span>Pick up your order from our store</span>
+                        </div>
+
+                        <b>FREE</b>
+
+                    </label>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+                <div class="checkout-section">
+
+                    <h2>PAYMENT METHOD</h2>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="cash"
+                            checked
+                        >
+
+                        <div>
+                            <strong>CASH ON DELIVERY</strong>
+                            <span>Pay when your order arrives.</span>
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="mobile"
+                        >
+
+                        <div>
+                            <strong>MOBILE MONEY</strong>
+                            <span>Pay using Mobile Money.</span>
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="card"
+                        >
+
+                        <div>
+                            <strong>CARD PAYMENT</strong>
+                            <span>Pay securely using your card.</span>
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="place-order-button"
+                    onclick="placeOrder()"
+                >
+                    PLACE ORDER
+                </button>
+
+
+                <a href="cart.html" class="back-cart">
+                    ← BACK TO CART
+                </a>
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="order-summary">
+
+                <h2>YOUR ORDER</h2>
+
+
+                <div id="checkoutProducts"></div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="summary-line">
+
+                    <span>Subtotal</span>
+
+                    <strong id="subtotal">
+                        UGX 0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>Delivery</span>
+
+                    <strong id="delivery">
+                        UGX 5,000
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>Discount</span>
+
+                    <strong id="discount">
+                        UGX 0
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="total-line">
+
+                    <span>TOTAL</span>
+
+                    <strong id="total">
+                        UGX 0
+                    </strong>
+
+                </div>
+
+
+                <div class="secure-checkout">
+
+                    <p>🔒 Secure Checkout</p>
+
+                    <p>✓ Safe & Secure Payment</p>
+
+                    <p>✓ Easy Returns</p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

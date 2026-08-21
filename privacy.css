@@ -1,0 +1,196 @@
+/* =====================================================
+   PRIVACY POLICY PAGE
+   ===================================================== */
+
+
+/* PAGE HEADER */
+
+.privacy-header {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0 55px;
+}
+
+.privacy-header p {
+    color: #888;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.privacy-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.privacy-header hr {
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: gold;
+    margin: 18px auto;
+}
+
+.privacy-header span {
+    color: #999;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+
+/* INTRO */
+
+.privacy-intro {
+    width: 70%;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.privacy-label {
+    color: gold !important;
+    font-size: 9px !important;
+    letter-spacing: 3px;
+    margin-bottom: 15px !important;
+}
+
+.privacy-intro h2 {
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.privacy-intro p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+.privacy-intro .privacy-updated {
+    color: #aaa;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+
+/* MAIN CONTENT */
+
+.privacy-content {
+    width: 85%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+/* PRIVACY BLOCK */
+
+.privacy-block {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 35px;
+    padding: 45px 0;
+    border-top: 1px solid #eee;
+}
+
+.privacy-number {
+    color: gold;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.privacy-block h2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.privacy-block p {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    max-width: 750px;
+}
+
+.privacy-block ul {
+    margin: 15px 0 0 18px;
+    padding: 0;
+}
+
+.privacy-block li {
+    color: #777;
+    font-size: 12px;
+    line-height: 2;
+    padding-left: 5px;
+}
+
+
+/* CONTACT BUTTON */
+
+.privacy-contact-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 11px 20px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.privacy-contact-button:hover {
+    background-color: #000;
+    color: white;
+}
+
+
+/* CTA */
+
+.shop-now-cta {
+    margin-top: 70px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.shop-now-cta p {
+    color: gold;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.shop-now-cta h2 {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.shop-now-cta a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.shop-now-cta a:hover {
+    background-color: gold;
+    border-color: gold;
+    color: #000;
+}
+

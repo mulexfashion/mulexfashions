@@ -1,0 +1,354 @@
+/* =====================================================
+   SHIPPING & DELIVERY PAGE
+   ===================================================== */
+
+
+/* PAGE HEADER */
+
+.shipping-page-header {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0 55px;
+}
+
+
+.shipping-page-header p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+
+.shipping-page-header h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+
+.shipping-page-header hr {
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: gold;
+    margin: 18px auto;
+}
+
+
+.shipping-page-header span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+
+
+/* INTRO */
+
+.shipping-intro {
+    width: 70%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+
+.shipping-intro h2 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+
+.shipping-intro p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+
+
+/* SECTION TITLE */
+
+.shipping-section-title {
+    margin-bottom: 40px;
+}
+
+
+.shipping-section-title p,
+.shipping-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+
+.shipping-section-title h2 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.shipping-section-title hr {
+    width: 45px;
+    height: 2px;
+    border: none;
+    background-color: gold;
+    margin-top: 15px;
+}
+
+
+
+/* DELIVERY OPTIONS */
+
+.shipping-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0 90px;
+}
+
+
+.shipping-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.shipping-card {
+    border: 1px solid #eee;
+    padding: 30px;
+    min-height: 250px;
+    transition: .3s;
+}
+
+
+.shipping-card:hover {
+    border-color: gold;
+}
+
+
+.shipping-number {
+    display: block;
+    font-size: 11px;
+    color: gold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+
+.shipping-card h3 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.shipping-card p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+.shipping-card strong {
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+
+
+/* SHIPPING PROCESS */
+
+.shipping-process {
+    background-color: #fafafa;
+    padding: 80px 6%;
+}
+
+
+.process-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.process-item {
+    padding: 0 25px;
+    border-left: 1px solid #ddd;
+}
+
+
+.process-item:first-child {
+    border-left: none;
+}
+
+
+.process-item span {
+    font-size: 11px;
+    color: gold;
+}
+
+
+.process-item h3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 20px 0 12px;
+}
+
+
+.process-item p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+
+/* IMPORTANT INFORMATION */
+
+.shipping-information {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 90px 0;
+}
+
+
+.shipping-information-container {
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    gap: 80px;
+}
+
+
+.shipping-information-container h2 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.shipping-notes p {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.8;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.shipping-notes span {
+    color: gold;
+    margin-right: 15px;
+    font-size: 10px;
+}
+
+
+
+/* FAQ */
+
+.shipping-faq {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0 90px;
+}
+
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+.faq-item {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+
+.faq-item h3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+
+.faq-item p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+
+/* CONTACT CTA */
+
+.shop-now {
+    background-color: #000;
+    color: white;
+
+    text-align: center;
+
+    padding: 65px 20px;
+}
+
+
+.shop-now p {
+    color: gold;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+.shop-now h2 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+
+.shop-now a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid white;
+
+    padding: 12px 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    transition: .3s;
+}
+
+
+.shop-now a:hover {
+    background-color: gold;
+    border-color: gold;
+    color: #000;
+}
+
